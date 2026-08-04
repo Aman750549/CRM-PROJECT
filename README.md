@@ -170,23 +170,6 @@ http://localhost:5173
 
 ---
 
-# 📸 Screenshots
-
-You can add screenshots here after uploading them to GitHub.
-
-Example:
-
-```
-Login Page
-
-Dashboard
-
-Customer Management
-
-Lead Management
-```
-
----
 
 # 🔮 Future Enhancements
 
