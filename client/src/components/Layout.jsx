@@ -2,48 +2,40 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 
-
-function Layout({children}) {
-
+function Layout({ children }) {
 
     return (
 
-        <div>
+        <div className="min-h-screen bg-gray-50">
 
+            {/* Navbar */}
 
             <Navbar />
 
 
-            <div
-            style={{
-                display:"flex"
-            }}
-            >
+            {/* Main Layout */}
 
+            <div className="flex min-h-[calc(100vh-64px)]">
+
+                {/* Sidebar */}
 
                 <Sidebar />
 
 
-                <div
-                style={{
-                    flex:1,
-                    padding:"20px"
-                }}
-                >
+                {/* Page Content */}
+
+                <main className="flex-1 min-w-0 overflow-x-hidden">
 
                     {children}
 
-                </div>
-
+                </main>
 
             </div>
-
 
         </div>
 
     );
 
 }
-
 
 export default Layout;
